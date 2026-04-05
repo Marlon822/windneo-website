@@ -1,0 +1,16 @@
+# WorkBuddy internal
+.workbuddy/
+.playwright-cli/
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+*.log
+*.tmp
