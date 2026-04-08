@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.windneo.com/sitemap.xml
+
+# Disallow internal/asset directories that don't need indexing
+Disallow: /.workbuddy/
+Disallow: /.playwright-cli/
