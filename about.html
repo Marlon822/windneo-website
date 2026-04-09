@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story — WindNeo | Premium Watch Winder Safes Since 2011</title>
+    <meta name="description" content="WindNeo was founded on a single conviction: the world's finest mechanical timepieces deserve a keeper of equal distinction. Fifteen years of Swiss-precision craftsmanship serving 5,000+ collectors across 21 countries.">
+    <meta name="keywords" content="WindNeo story, watch winder brand history, luxury watch storage brand, Swiss motor watch winder manufacturer">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.windneo.com/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Our Story — WindNeo">
+    <meta property="og:description" content="Fifteen years of Swiss-precision craftsmanship. The WindNeo story.">
+    <meta property="og:image" content="https://www.windneo.com/images/hero-bg.png">
+    <meta property="og:url" content="https://www.windneo.com/about.html">
+    <link rel="stylesheet" href="styles.css?v=10">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-page { background: var(--bg-primary); padding-top: 100px; }
+        .about-hero { padding: 100px 0 80px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .about-hero-label { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: var(--gold-mid); margin-bottom: 24px; display: block; }
+        .about-hero-title { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 6vw, 5rem); color: var(--text-primary); line-height: 1.1; margin-bottom: 32px; }
+        .about-hero-text { font-size: 1.2rem; color: var(--text-secondary); max-width: 680px; margin: 0 auto; line-height: 1.8; }
+        .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,0.05); margin: 80px 0; }
+        .about-stat { background: var(--bg-primary); padding: 48px 40px; text-align: center; }
+        .about-stat-num { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--gold-mid); line-height: 1; margin-bottom: 12px; }
+        .about-stat-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-muted); }
+        .about-chapter { padding: 80px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .about-chapter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .about-chapter-grid.reverse { direction: rtl; }
+        .about-chapter-grid.reverse > * { direction: ltr; }
+        .about-chapter-img img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+        .about-chapter-year { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold-mid); margin-bottom: 16px; display: block; }
+        .about-chapter-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--text-primary); margin-bottom: 24px; line-height: 1.2; }
+        .about-chapter-text { color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+        .about-values { padding: 80px 0; }
+        .about-values-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--text-primary); text-align: center; margin-bottom: 16px; }
+        .about-values-sub { text-align: center; color: var(--text-muted); margin-bottom: 64px; font-size: 1rem; }
+        .about-values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+        .about-value-card { padding: 40px 28px; border: 1px solid rgba(255,255,255,0.06); text-align: center; }
+        .about-value-num { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--gold-mid); opacity: 0.4; margin-bottom: 20px; }
+        .about-value-title { font-size: 1rem; color: var(--text-primary); font-weight: 500; margin-bottom: 12px; letter-spacing: 1px; }
+        .about-value-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.7; }
+        .about-cta { padding: 100px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
+        .about-cta-quote { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--text-primary); font-style: italic; max-width: 700px; margin: 0 auto 48px; line-height: 1.5; }
+        .about-cta-btns { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .btn-gold { background: var(--gold-gradient); color: var(--bg-primary); padding: 16px 48px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; font-weight: 500; transition: opacity 0.3s; }
+        .btn-gold:hover { opacity: 0.85; }
+        .btn-outline { border: 1px solid rgba(184,134,75,0.5); color: var(--gold-mid); padding: 16px 48px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: all 0.3s; }
+        .btn-outline:hover { border-color: var(--gold-mid); color: var(--text-primary); }
+        @media (max-width: 768px) {
+            .about-stats { grid-template-columns: 1fr; }
+            .about-chapter-grid, .about-chapter-grid.reverse { grid-template-columns: 1fr; direction: ltr; gap: 40px; }
+            .about-values-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 480px) { .about-values-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="./images/logo.png" alt="WindNeo" class="nav-logo-img"></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#products" class="nav-link">Collections</a></li>
+                <li><a href="index.html#bespoke" class="nav-link nav-link-bespoke">Bespoke</a></li>
+                <li><a href="about.html" class="nav-link active">Our Story</a></li>
+                <li><a href="index.html#cases" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="about-page">
+
+        <!-- Hero -->
+        <div class="about-hero">
+            <div class="container">
+                <span class="about-hero-label">Est. 2011 — Geneva · Hong Kong · Shanghai</span>
+                <h1 class="about-hero-title">Guarding the Art<br>of Time with Reverence</h1>
+                <p class="about-hero-text">WindNeo was founded on a single conviction: the world's finest mechanical timepieces deserve a keeper of equal distinction. For fifteen years, that conviction has guided every motor we source, every leather we select, and every seam we stitch.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Stats -->
+            <div class="about-stats">
+                <div class="about-stat">
+                    <div class="about-stat-num">5,000+</div>
+                    <div class="about-stat-label">Collectors Served Worldwide</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-num">21</div>
+                    <div class="about-stat-label">Countries &amp; Regions</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-num">15 Yrs</div>
+                    <div class="about-stat-label">Craftsmanship Heritage</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 1 -->
+        <div class="about-chapter">
+            <div class="container">
+                <div class="about-chapter-grid">
+                    <div class="about-chapter-img">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=600&fit=crop&q=80" alt="WindNeo Workshop">
+                    </div>
+                    <div>
+                        <span class="about-chapter-year">2011 — The Beginning</span>
+                        <h2 class="about-chapter-title">A Watchmaker's Obsession</h2>
+                        <p class="about-chapter-text">WindNeo was born in a small workshop in Shanghai, where our founder — a lifelong horologist and collector — could find no winder worthy of his Patek Philippe collection. Every product on the market was either technically adequate but aesthetically vapid, or beautiful but mechanically unreliable.</p>
+                        <p class="about-chapter-text">The decision was simple: build one himself. The first WindNeo prototype took eleven months and three failed designs before the fourth version earned a permanent place on his desk — and the admiration of every collector who visited.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 2 -->
+        <div class="about-chapter">
+            <div class="container">
+                <div class="about-chapter-grid reverse">
+                    <div class="about-chapter-img">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&q=80" alt="WindNeo Craftsmanship">
+                    </div>
+                    <div>
+                        <span class="about-chapter-year">2015 — The Standard</span>
+                        <h2 class="about-chapter-title">Swiss Precision Meets Italian Artistry</h2>
+                        <p class="about-chapter-text">By 2015, WindNeo had established partnerships with two Swiss motor manufacturers whose movements power some of the world's finest clocks — and with an Italian atelier in Florence whose leather craftsmen had spent decades working for the great luggage houses.</p>
+                        <p class="about-chapter-text">The combination — Swiss mechanical precision inside, Italian leather artistry outside — became the WindNeo signature. It remains so today: every product, from the Classic to the Imperial, is built to the same uncompromising standard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="about-chapter">
+            <div class="container">
+                <div class="about-chapter-grid">
+                    <div class="about-chapter-img">
+                        <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800&h=600&fit=crop&q=80" alt="WindNeo Global">
+                    </div>
+                    <div>
+                        <span class="about-chapter-year">2020 — The World</span>
+                        <h2 class="about-chapter-title">From One Workshop to 21 Countries</h2>
+                        <p class="about-chapter-text">Word travels in the collector community. By 2020, WindNeo was serving collectors in 21 countries — from private residences in London and Monaco to boutiques in Tokyo and Geneva. The Bespoke programme, launched in 2019, had already produced commissions for watch clubs, luxury hotels, and private estates.</p>
+                        <p class="about-chapter-text">Through it all, we have kept one policy absolute: no piece leaves our atelier until the craftsman responsible for it is willing to put his name on the maker's plate. Every WindNeo carries that accountability — and that pride.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Values -->
+        <div class="about-values">
+            <div class="container">
+                <h2 class="about-values-title">What We Stand For</h2>
+                <p class="about-values-sub">Four principles, unchanged since 2011</p>
+                <div class="about-values-grid">
+                    <div class="about-value-card">
+                        <div class="about-value-num">01</div>
+                        <h3 class="about-value-title">No Compromise</h3>
+                        <p class="about-value-desc">Every component is specified to match or exceed the standards of the timepieces it houses. We do not make exceptions for cost or convenience.</p>
+                    </div>
+                    <div class="about-value-card">
+                        <div class="about-value-num">02</div>
+                        <h3 class="about-value-title">One Craftsman</h3>
+                        <p class="about-value-desc">Each WindNeo is built by a single craftsman from first cut to final inspection. No assembly line. No handoff. One person, one responsibility.</p>
+                    </div>
+                    <div class="about-value-card">
+                        <div class="about-value-num">03</div>
+                        <h3 class="about-value-title">Earned Exclusivity</h3>
+                        <p class="about-value-desc">We limit our Bespoke programme to 24 commissions per year — not as a marketing device, but because 25 would exceed what we can build with integrity.</p>
+                    </div>
+                    <div class="about-value-card">
+                        <div class="about-value-num">04</div>
+                        <h3 class="about-value-title">Lifetime Responsibility</h3>
+                        <p class="about-value-desc">Every WindNeo comes with lifetime priority service. When your collection needs attention, so does the piece that holds it. We never walk away from our work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="about-cta">
+            <div class="container">
+                <p class="about-cta-quote">"Your watches are irreplaceable.<br>The safe that holds them should be too."</p>
+                <div class="about-cta-btns">
+                    <a href="index.html#products" class="btn-gold">Explore Collections</a>
+                    <a href="contact.html" class="btn-outline">Begin Your Commission</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo"><img src="./images/logo.png" alt="WindNeo" class="footer-logo-img"></span>
+                    <p class="footer-slogan">Crown Your Time</p>
+                    <p class="footer-desc">Premium watch winder safes for discerning collectors worldwide</p>
+                </div>
+                <div class="footer-links-group">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#products">Collections</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="index.html#cases">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-group">
+                    <h5 class="footer-heading">Get in Touch</h5>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+86 186-7672-8521</span></div>
+                        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>stevenma721@gmail.com</span></div>
+                        <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>+86 186-7672-8521</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&#169; 2026 WindNeo. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+</body>
+</html>
