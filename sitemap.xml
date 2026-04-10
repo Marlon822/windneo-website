@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.windneo.com/</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -71,6 +71,38 @@
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://www.windneo.com/blog/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: How to Choose a Watch Winder -->
+  <url>
+    <loc>https://www.windneo.com/blog/how-to-choose-watch-winder.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog: Why Watch Winders Matter -->
+  <url>
+    <loc>https://www.windneo.com/blog/why-watch-winders-matter.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog: Watch Winder vs Watch Box -->
+  <url>
+    <loc>https://www.windneo.com/blog/watch-winder-vs-watch-box.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
